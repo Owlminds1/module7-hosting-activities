@@ -1,0 +1,58 @@
+[
+  {
+    "image": "/C50Images/Cash_Register.jpg",
+    "val": "Cash Register"
+  },
+  {
+    "image": "/C50Images/Bank_Balance.jpg",
+    "val": "Bank Balance"
+  },
+  {
+    "image": "/C50Images/Cashier.jpg",
+    "val": "Cashier"
+  },
+  {
+    "image": "/C50Images/Price_Tag.jpg",
+    "val": "Price Tag"
+  },
+  {
+    "image": "/C50Images/sale.jpg",
+    "val": "Sale"
+  },
+  {
+    "image": "/C50Images/Credit_Card.jpg",
+    "val": "Credit Card"
+  },
+  {
+    "image": "/C50Images/debit_card.jpg",
+    "val": "Debit Card"
+  },
+  {
+    "image": "/C50Images/Payment.jpg",
+    "val": "Payment"
+  },
+  {
+    "image": "/C50Images/Purchase.jpg",
+    "val": "Purchase"
+  },
+  {
+    "image": "/C50Images/Wallet.jpg",
+    "val": "Wallet"
+  },
+  {
+    "image": "/C50Images/giftcard.jpg",
+    "val": "Giftcard"
+  },
+  {
+    "image": "/C50Images/Bill.png",
+    "val": "Bill"
+  },
+  {
+    "image": "/C50Images/reciept.jpg",
+    "val": "Receipt"
+  },
+  {
+    "image": "/C50Images/Invoice.png",
+    "val": "Invoice"
+  }
+]

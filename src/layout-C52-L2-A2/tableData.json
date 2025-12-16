@@ -1,0 +1,54 @@
+[
+    {
+        "item":"ATM",
+        "text":"“A computerized electronic machine that performs basic banking functions (such as handling check deposits or issuing cash withdrawals)”",
+        "img":"/C52Images/"
+    },
+    
+    
+    {
+        "item":"MONEY ORDER",
+        "text":"“An order issued by a post office, bank, or telegraph office for payment of a specified sum of money usually at any branch of the organization”",
+        "img":"/C52Images/"
+    },
+    
+    {
+        "item":"ONLINE BANKING",
+        "text":"“The process or activity of managing bank accounts or operating as a bank over the internet”",
+        "img":"/C52Images/"
+    } ,
+    
+    
+    {
+        "item":"CHEQUE",
+        "text":"“A written order directing a bank to pay money as instructed”",
+        "img":"/C52Images/"
+    },
+    
+    
+    {
+        "item":"WIRE TRANSFER",
+        "text":"A transfer of funds (as from one bank account to another) by electronic or formerly by telegraphic means",
+        "img":"/C52Images/"
+    },
+    
+    
+    {
+        "item":"POS (POINT OF SALE)",
+        "text":"“A place where something is sold to the public, or the place where someone pays for something”",
+        "img":"/C52Images/"
+    } ,
+    
+    
+    {
+        "item":"CASH WITHDRAWAL",
+        "text":"“When you take money out of an ATM or a bank (cheque)”",
+        "img":"/C52Images/"
+    },
+    
+    {
+        "item":"DEPOSIT",
+        "text":"“To place something valuable (money, assets) in a bank especially for safekeeping or as a pledge”",
+        "img":"/C52Images/"
+    }
+]

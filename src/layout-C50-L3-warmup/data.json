@@ -1,0 +1,31 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Coffee, Water, Tea, Juice, Curd (preference)"
+     },
+     { 
+        "id":"2", 
+        "Name":"Teachers, Friends, Parents, Peers, Siblings, Best Friends (preference) "
+
+     }, 
+
+     { 
+
+     "id":"3",
+      "Name":"Clothes, Shoes, Books, Schoolbag, Phone, Pen (chronology based on routine)"
+    }, 
+    
+
+     { 
+
+     "id":"4",
+      "Name":"Oil, spices, main ingredients, water, simmer (chronology of simple recipes)"
+  },
+
+        { 
+        "id":"5",
+         "Name":"Science, Math, Social Studies, English, Languages, Arts (preference)"
+ 
+     }
+     ]

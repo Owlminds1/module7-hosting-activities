@@ -1,0 +1,73 @@
+[
+
+      {
+        "name":"Pear",
+        "price":"2$ per piece",
+        "img":"/C50Images/pears.jpg"
+    },
+    
+    {
+        "name":"Bookstand",
+        "price":"20% discount on original price of 100 $",
+        "img":"/C50Images/bookstand.jpg"
+    },
+    
+    {
+        "name":"Pencil Set ",
+        "price":"50$ including sharpener, pencil, eraser, glue and pencil colors",
+        "img":"/C50Images/pencil_set.jpg"
+    },
+    
+    {
+        "name":"School Bag",
+        "price":"60$",
+        "img":"/C50Images/school_bag.jpg"
+    },
+    
+    
+    {
+        "name":"Video Game",
+        "price":"400$",
+        "img":"/C50Images/VG.jpg"
+    },
+
+
+    {
+        "name":"Water Bottle",
+        "price":"10$",
+        "img":"/C50Images/water_bottle.jpg"
+    },
+    
+    
+    {
+        "name":"T-shirt",
+        "price":"50% discount on original price of 100$",
+        "img":"/C50Images/Tshirt.jpg"
+    },
+    
+    {
+        "name":"Shoes",
+        "price":"60$",
+        "img":"/C50Images/shoes.jpg"
+    },
+    
+    
+    {
+        "name":"Trousers ",
+        "price":"40$",
+        "img":"/C50Images/trousers.jpg"
+    },
+    
+    {
+        "name":"Football",
+        "price":"30$",
+        "img":"/C50Images/football.jpg"
+    },
+    
+    
+    {
+        "name":"Basketball",
+        "price":"15$",
+        "img":"/C50Images/basketball.jpg"
+    }
+]

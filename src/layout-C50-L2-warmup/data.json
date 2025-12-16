@@ -1,0 +1,31 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Flower, Tree, Plant, Soil, Fruit, Bud."
+     },
+     { 
+        "id":"2", 
+        "Name":"Reading, Playing, Sleeping, Walking, Eating, Talking."
+
+     }, 
+
+     { 
+
+     "id":"3",
+      "Name":"Science, Math, Social Studies, English, Languages, Arts."
+    }, 
+    
+
+     { 
+
+     "id":"4",
+      "Name":"Teachers, Friends, Parents, Peers, Siblings, Best Friends."
+  },
+
+        { 
+        "id":"5",
+         "Name":"Apples, Bananas, Papaya, Guavas, Oranges, Cherries."
+ 
+     }
+     ]
