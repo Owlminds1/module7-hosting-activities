@@ -1,0 +1,48 @@
+[
+    {
+        "tilte":"Friends",
+        "top":"15%",
+        "bottom":"",
+        "left":"38%",
+        "right":"",
+        "rotatr":""
+    },
+    
+    
+    {
+        "tilte":"Parents",
+        "top":"34%",
+        "bottom":"",
+        "left":"",
+        "right":"15%",
+        "rotatr":"-12deg"
+    },
+    
+    {
+        "tilte":"Siblings",
+        "top":"",
+        "bottom":"15%",
+        "left":"",
+        "right":"23%",
+        "rotatr":"-30deg"
+    },
+    
+    
+    {
+        "tilte":"Teachers",
+        "top":"",
+        "bottom":"15%",
+        "left":"23%",
+        "right":"",
+        "rotatr":"30deg"
+    },
+
+     {
+        "tilte":"Peers",
+        "top":"34%",
+        "bottom":"",
+        "left":"15%",
+        "right":"",
+        "rotatr":"12deg"
+    }
+]
