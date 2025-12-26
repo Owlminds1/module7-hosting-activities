@@ -1,0 +1,40 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Shower"
+     },
+
+
+     { 
+
+     "id":"2",
+      "Name":"Brush"
+    }, 
+    
+
+     { 
+
+     "id":"3",
+      "Name":"Dinner"
+  },
+
+        { 
+        "id":"4",
+         "Name":"Lunch"
+ 
+     },
+     
+     
+     { 
+        "id":"5",
+         "Name":"Study"
+ 
+     } ,
+     
+     { 
+        "id":"6",
+         "Name":"Play"
+ 
+     }
+     ]

@@ -1,0 +1,40 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Teachers"
+     },
+
+
+     { 
+
+     "id":"2",
+      "Name":"Friends"
+    }, 
+    
+
+     { 
+
+     "id":"3",
+      "Name":"Parents"
+  },
+
+        { 
+        "id":"4",
+         "Name":"Peers"
+ 
+     },
+     
+     
+     { 
+        "id":"5",
+         "Name":"Siblings"
+ 
+     } ,
+     
+     { 
+        "id":"6",
+         "Name":"Best Friends"
+ 
+     }
+     ]

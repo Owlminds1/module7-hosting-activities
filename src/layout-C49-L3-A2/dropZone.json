@@ -6,26 +6,26 @@
 
     {
         "image":"/C49Images/Forms.jpg",
-        "val":"Forms Of Privilege"
+        "val":"Forms of Privilege"
     },
 
      {
         "image":"/C49Images/Reasons.jpg",
-        "val":"Reasons Of Privilege"
+        "val":"Reasons of Privilege"
     },
     
     {
         "image":"/C49Images/Advantages.jpg",
-        "val":"Advantages Of Privilege"
+        "val":"Advantages of Privilege"
     },
     
     {
         "image":"/C49Images/Impact.jpg",
-        "val":"Impact Of Privilege"
+        "val":"Impact of Privilege"
     },
     
     {
         "image":"/C49Images/example.jpg",
-        "val":"Examples Of Privilege Vs Lack Of Privilege"
+        "val":"Examples of Privilege Vs Lack Of Privilege"
     }
 ]

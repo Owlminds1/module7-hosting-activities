@@ -6,7 +6,7 @@ const LayoutC49L1PCA = () => {
     <div className="min-h-screen bg-[#F8FAFC] flex justify-start items-center p-5 flex-col gap-5">
       <div>
         <h4 className="text-3xl text-center font-bold text-black">
-        Kindness Chart
+       Kindness Star
         </h4>
         <p className="text-black text-lg text-center">
           Think about ways you can be kind towards people you love and respect. This includes your:
