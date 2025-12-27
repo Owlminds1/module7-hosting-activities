@@ -16,9 +16,23 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex justify-center items-center p-5 flex-col gap-5">
+    <div className="min-h-screen bg-[#F8FAFC] flex justify-start items-center p-5 flex-col gap-5">
       <div>
-        <h4 className="text-3xl font-bold text-black">Questioning parents</h4>
+        <h4 className="text-3xl font-bold text-black text-center">Questioning parents</h4>
+        <p className="text-lg text-black text-center my-3">Ask the following questions to your parents in an interview format. Record the interview and share with the teacher.
+</p>
+
+
+<div className="w-full my-2 flex justify-center items-center">
+  <ul className="list-disc space-y-2 px-2   w-[60%]">
+  <li className="text-black text-lg ">Why do you buy from a specific brand?</li>
+  <li className="text-black text-lg ">Where do you shop grocery items?</li>
+  <li className="text-black text-lg ">Where do you shop stationary items?</li>
+  <li className="text-black text-lg "> What are some positive qualities of the brands you buy from on a regular basis?</li>
+  <li className="text-black text-lg ">What kind of brands do you not buy from? Why?</li>
+  <li className="text-black text-lg ">What advice would you give to buyers?</li>
+</ul>
+</div>
       </div>
       <div>
         {

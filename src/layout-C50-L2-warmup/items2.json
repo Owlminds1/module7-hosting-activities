@@ -1,0 +1,40 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Reading"
+     },
+
+
+     { 
+
+     "id":"2",
+      "Name":"Playing"
+    }, 
+    
+
+     { 
+
+     "id":"3",
+      "Name":"Sleeping"
+  },
+
+        { 
+        "id":"4",
+         "Name":"Walking"
+ 
+     },
+     
+     
+     { 
+        "id":"5",
+         "Name":"Eating"
+ 
+     } ,
+     
+     { 
+        "id":"6",
+         "Name":"Talking"
+ 
+     }
+     ]

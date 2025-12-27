@@ -1,12 +1,15 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import EXPECTED from "@/src/layout-C50-L1-A5/EXPECTED.json";
 import WORD_BANK from "@/src/layout-C50-L1-A5/WORD_BANK.json";
 import Image from "next/image";
+import Welldone from "@/components/wellDone";
 
 const LayoutC50L1A5: React.FC = () => {
   const [availableWords, setAvailableWords] = useState(WORD_BANK);
   const [blanks, setBlanks] = useState<string[]>(Array(8).fill(""));
+  const [open, setOpen] = useState(false); // ✅ for one-time alert
 
   const onDragStart = (e: React.DragEvent<HTMLDivElement>, word: string) => {
     e.dataTransfer.setData("text/plain", word);
@@ -34,14 +37,24 @@ const LayoutC50L1A5: React.FC = () => {
     setAvailableWords((prev) => prev.filter((w) => w.text !== word));
   };
 
+  // ✅ CHECK COMPLETION → SIMPLE ALERT
+  useEffect(() => {
+    const allFilled = blanks.every((word) => word !== "");
+
+    if (allFilled && !open) {
+      setOpen(true);
+    }
+  }, [blanks]);
+
   return (
     <div className="p-6 bg-gray-50 min-h-screen flex flex-col items-center">
-      <h4 className="text-2xl font-bold text-black">
-        HOW ADULTS HELP KIDS MAKE WISE CHOICES
+      <h4 className="text-xl font-bold text-black text-center">
+        Fill in the blanks to complete an essay about how your parents and
+        teachers have taught you how to make wise choices.
       </h4>
 
       <p className="text-lg text-center text-black my-3">
-        Fill in the blanks with the correct choice from the table.
+        Drag the word and place it at the correct place to complete your essay.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-12 place-items-center gap-6 w-[85%]">
@@ -51,18 +64,17 @@ const LayoutC50L1A5: React.FC = () => {
             availableWords.length === 0
               ? "col-span-0"
               : "col-span-4 p-5 border rounded-lg"
-          }   `}
+          }`}
         >
           <div className="flex flex-wrap justify-center items-center gap-3">
             {availableWords.map((word) => (
-              <div key={word.text}  draggable
-                  onDragStart={(e) => onDragStart(e, word.text)} className="border cursor-grab p-1 flex justify-center items-center flex-col border-black">
-                <h4
-                 
-                  className="px-3 py-1 text-black rounded-lg  text-lg"
-                >
-                  {word.text}
-                </h4>
+              <div
+                key={word.text}
+                draggable
+                onDragStart={(e) => onDragStart(e, word.text)}
+                className="border cursor-grab p-1 flex justify-center items-center flex-col border-black"
+              >
+                <h4 className="px-3 py-1 text-black text-lg">{word.text}</h4>
 
                 <div className="w-20 h-20 relative">
                   <Image src={word.img} fill alt={word.text} />
@@ -76,9 +88,15 @@ const LayoutC50L1A5: React.FC = () => {
         <div
           className={`${
             availableWords.length === 0 ? "col-span-12" : "col-span-8"
-          }  p-5 border rounded-lg shadow flex justify-center items-center flex-col gap-3 bg-white`}
+          } p-5 border rounded-lg shadow flex justify-center items-center flex-col gap-3 bg-white`}
         >
-          <Image src="/C50IMages/Gratitude.jpg"  width={200} height={100} alt="images"/>
+          <Image
+            src="/C50Images/Gratitude.jpg"
+            width={200}
+            height={100}
+            alt="images"
+          />
+
           <p className="text-lg text-black leading-8">
             I think I have really cool parents and teachers. I have learned how
             to have
@@ -92,14 +110,15 @@ const LayoutC50L1A5: React.FC = () => {
             my parents and teachers have taught me to be
             <Blank index={4} blanks={blanks} handleDrop={handleDrop} />
             and
-            <Blank index={5} blanks={blanks} handleDrop={handleDrop} />
-            . I’m really looking forward to making more
+            <Blank index={5} blanks={blanks} handleDrop={handleDrop} />. I’m
+            really looking forward to making more
             <Blank index={6} blanks={blanks} handleDrop={handleDrop} />
             and continuing learning from
             <Blank index={7} blanks={blanks} handleDrop={handleDrop} />!
           </p>
         </div>
       </div>
+      <Welldone open={open} setOpen={setOpen} />
     </div>
   );
 };
@@ -122,13 +141,9 @@ const Blank = ({
     <span
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => handleDrop(e, index)}
-      className={`inline-block mx-2 px-2 py-1 min-w-[90px]   
-        ${
-          filled
-            ? "text-violet-900  border-b-2 border-black"
-            : "border-gray-400"
-        }
-      `}
+      className={`inline-block mx-2 px-2 py-1 min-w-[90px] ${
+        filled ? "text-violet-900 border-b-2 border-black" : "border-gray-400"
+      }`}
     >
       {filled || "_________"}
     </span>

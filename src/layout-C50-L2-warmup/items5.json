@@ -1,0 +1,40 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Apples"
+     },
+
+
+     { 
+
+     "id":"2",
+      "Name":"Bananas"
+    }, 
+    
+
+     { 
+
+     "id":"3",
+      "Name":"Papaya"
+  },
+
+        { 
+        "id":"4",
+         "Name":"Guavas"
+ 
+     },
+     
+     
+     { 
+        "id":"5",
+         "Name":"Oranges"
+ 
+     } ,
+     
+     { 
+        "id":"6",
+         "Name":"Cherries"
+ 
+     }
+     ]
