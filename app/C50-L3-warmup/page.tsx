@@ -1,5 +1,5 @@
-import LayoutC50L3Warmup from '@/src/layout-C50-L3-warmup'
-import React from 'react'
+import LayoutC50L3Warmup from "@/src/layout-C50-L3-warmup"
+
 
 const Page = () => {
   return (

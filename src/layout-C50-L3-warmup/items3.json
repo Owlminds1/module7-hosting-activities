@@ -1,0 +1,40 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Clothes"
+     },
+
+
+     { 
+
+     "id":"2",
+      "Name":"Shoes"
+    }, 
+    
+
+     { 
+
+     "id":"3",
+      "Name":"Books"
+  },
+
+        { 
+        "id":"4",
+         "Name":"Schoolbag"
+ 
+     },
+     
+     
+     { 
+        "id":"5",
+         "Name":"Phone"
+ 
+     } ,
+     
+     { 
+        "id":"6",
+         "Name":"Pen"
+ 
+     }
+     ]
