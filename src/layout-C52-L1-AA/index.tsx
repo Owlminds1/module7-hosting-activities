@@ -22,22 +22,40 @@ const LayoutC52L1AA = () => {
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] flex flex-col justify-start items-center p-5 gap-10">
-      <div>
+      <div className="flex flex-col gap-2 justify-center items-center">
         <h3 className="text-2xl font-bold text-center text-black">
           Pricing and Discount
         </h3>
 
-        {/* <p className="text-2xl font-medium text-center my-2">
-       Act out that emotion. You score a point if others are able to guess it.
-      </p> */}
+        <ul className="list-disc space-y-1 w-[50%] ">
+        <li className="text-xl text-black font-medium  my-2">
+      Here are some items in the store</li>
+      
+      
+        <li className="text-xl text-black font-medium  my-2">
+     Some items are of original price</li>
+     
+     
+     <li className="text-xl text-black font-medium  my-2">
+    Others are discounted</li>
+    
+    
+     <li className="text-xl text-black font-medium  my-2">
+   Read aloud the price of each item naming the item, its price, and the discount if applicable</li>
+
+        </ul>
+
+        <p className="text-zinc-600 text-lg italic">For example: This apple costs $5 per piece.
+This Bookstand is available at 20% discount on its price of 100 $.</p>
+
       </div>
-      <div className="grid grid-cols-12 w-[80%]  place-items-center gap-3">
+      <div className="grid grid-cols-12 w-[90%]  place-items-center gap-10">
         {shuffle.map((item, index) => (
           <div
             key={index}
             className={` 
                 ${flippedIndex === index ? "pointer-events-none" : ""}
-                col-span-4 relative w-full h-[200px] [perspective:1000px] cursor-pointer`}
+                col-span-4 relative w-full h-[300px] [perspective:1000px] cursor-pointer`}
             onClick={() => handleFlip(index)}
           >
             <div
@@ -53,8 +71,8 @@ const LayoutC52L1AA = () => {
 
               {/* Back */}
               <div className="absolute w-full h-full border border-black text-white rounded-lg flex justify-center items-center flex-col gap-5 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <h2 className="text-2xl text-black font-bold">{item.name}</h2>
-                <span className="text-violet-900 font-bold text-xl text-center px-3">
+                <h2 className="text-3xl text-black font-bold">{item.name}</h2>
+                <span className="text-violet-900 font-bold text-3xl text-center px-3">
                   {item.price}
                 </span>
               </div>
