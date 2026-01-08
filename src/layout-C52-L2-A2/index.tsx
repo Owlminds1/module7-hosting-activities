@@ -74,7 +74,7 @@ const LayoutC52L2A2 = () => {
           {TableData.map((t, i) => (
             <div
               key={i}
-              className="border flex justify-center items-center p-3 font-bold text-center min-h-25 text-black bg-white"
+              className="border flex justify-center text-lg items-center p-3 font-bold text-center min-h-25 text-black bg-white"
             >
               {t.item}
             </div>
@@ -83,7 +83,7 @@ const LayoutC52L2A2 = () => {
 
         {/* DEFINITIONS COLUMN (Shuffled + draggable) */}
         <div className="col-span-6">
-          <div className="bg-violet-900 text-white font-bold p-2 text-center">
+          <div className="bg-violet-900  text-white font-bold p-2 text-center">
             DEFINITION
           </div>
 
@@ -97,7 +97,7 @@ const LayoutC52L2A2 = () => {
                 onDragStart={() => setDragDefIndex(i)}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDefDrop(i)}
-                className={`border p-3 flex justify-center items-center  font-bold text-center min-h-25 text-black active:border-black active:scale-95  active:cursor-grabbing hover:cursor-grab 
+                className={`border p-3 text-lg flex justify-center items-center  font-bold text-center min-h-25 text-black active:border-black active:scale-95  active:cursor-grabbing hover:cursor-grab 
                   ${checked ? (matched ? "bg-green-200" : "bg-red-200") : "bg-white"}
                 `}
               >

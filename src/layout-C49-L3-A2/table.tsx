@@ -80,7 +80,7 @@ export default function TableSlide() {
               key={index}
               draggable
               onDragStart={() => handleDragStart(item)}
-              className="text-md p-1 rounded-md border border-gray-300 font-medium text-black bg-white shadow-sm hover:bg-gray-100 cursor-grab active:cursor-grabbing"
+              className="text-xl text-center p-1 rounded-md border border-gray-300 font-medium text-black bg-white shadow-sm hover:bg-gray-100 cursor-grab active:cursor-grabbing"
             >
               {item.text}
             </h4>
@@ -115,7 +115,7 @@ export default function TableSlide() {
               {dropItems[dIndex]?.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white text-black text-center border border-gray-300 rounded-md p-1 shadow-sm"
+                  className="bg-white text-xl  text-black text-center border border-gray-300 rounded-md p-1 shadow-sm"
                 >
                   {item}
                 </div>
@@ -126,7 +126,7 @@ export default function TableSlide() {
       </div>
 
       {/* 🎉 Dialog */}
-      <Welldone open={open} setOpen={setOpen}  />
+      <Welldone open={open} setOpen={setOpen} />
     </div>
   );
 }

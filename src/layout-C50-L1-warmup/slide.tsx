@@ -31,11 +31,14 @@ const Slide = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex justify-center items-center p-5 flex-col gap-5">
       <div>
-        <h4 className="text-3xl font-bold text-black">
+        <h4 className="text-3xl text-center font-bold text-black">
       ROUTINE OR PREFERENCE
         </h4>
 
-        <p className="text-lg text-black text-center">Drag and drop in order of your preferred routine
+        <p className="text-xl text-black text-center">
+          {
+            activeSlide === 0 ? "Drag and drop in order of your preferred routine":activeSlide === 1 ? " Drag and drop in order of their preferred routine ": activeSlide === 2 ? " Drag and drop in order of their preferred subjects, the most favourite subject at the top and least favourite at the bottom": activeSlide === 3 ? " Drag and drop in order of their preferred vegetable, the most favourite at the top and least favourite at the bottom": "Drag and drop in order of their preferred people, the most favourite being at the top and least favourite at the bottom"
+          }
 </p>
       </div>
 
@@ -64,13 +67,15 @@ const Slide = () => {
               <Slide3/>
             </SwiperSlide>
             
+ <SwiperSlide>
+              <Slide5/>
+            </SwiperSlide>
+
             <SwiperSlide>
               <Slide4/>
             </SwiperSlide>
             
-            <SwiperSlide>
-              <Slide5/>
-            </SwiperSlide>
+           
 
           </Swiper>
         </div>

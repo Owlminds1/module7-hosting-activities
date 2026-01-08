@@ -31,9 +31,12 @@ const Slide = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex justify-center items-center p-5 flex-col gap-5">
       <div>
-         <h1 className="text-4xl text-center mb-8 text-black">CHRONOLOGY OR PRIORITY</h1>
+         <h1 className="text-4xl text-center mb-2 text-black">CHRONOLOGY OR PRIORITY</h1>
 
-        <p className="text-lg text-black text-center">Drag and drop in order of your preferred routine
+        <p className="text-xl text-black text-center">{
+          activeSlide === 0
+            ? "Drag and drop in order of plant growth"
+            : activeSlide === 1 ? " Drag and drop in order of their preferred routine": activeSlide === 2 ?"Drag and drop in order of their preferred subjects, the most favourite subject at the top and least favourite at the bottom": activeSlide === 3 ? "Drag and drop in order of their preferred people, the most favourite being at the top and least favourite at the bottom" : activeSlide === 4 ? "Dag and drop in order of their preferred fruits, the most favourite at the top and least favourite at the bottom":""}
 </p>
       </div>
 
