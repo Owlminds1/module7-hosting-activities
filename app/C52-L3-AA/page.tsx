@@ -21,11 +21,11 @@ const Page = () => {
 
          <div className="col-span-6 w-full flex justify-center items-center ">
            <ul className="list-disc space-y-4 ">
-            <li className="text-black"><span className="font-bold">Amount :</span> How much would it cost?</li>
-            <li className="text-black"><span className="font-bold">Brand :</span> What brand would you choose?</li>
-            <li className="text-black"><span className="font-bold">Ease of Use :</span> Where all can this gift card be used?</li>
-            <li className="text-black"><span className="font-bold">Secure Transactions :</span> Where will you purchase it?</li>
-            <li className="text-black"><span className="font-bold">Validity :</span> How long can this gift card be used?</li>
+            <li className="text-black text-xl "><span className="font-bold">Amount :</span> How much would it cost?</li>
+            <li className="text-black text-xl "><span className="font-bold">Brand :</span> What brand would you choose?</li>
+            <li className="text-black text-xl "><span className="font-bold">Ease of Use :</span> Where all can this gift card be used?</li>
+            <li className="text-black text-xl "><span className="font-bold">Secure Transactions :</span> Where will you purchase it?</li>
+            <li className="text-black text-xl "><span className="font-bold">Validity :</span> How long can this gift card be used?</li>
            </ul>
         </div>
       </div>

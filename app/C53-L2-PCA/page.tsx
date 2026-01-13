@@ -17,8 +17,27 @@ const Page = () => {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex justify-center items-center p-5 flex-col gap-5">
-      <div>
-        <h4 className="text-3xl font-bold text-black">Poster</h4>
+      <div className="flex justify-center items-center flex-col gap-3">
+        <h4 className="text-3xl font-bold text-center text-black">Poster</h4>
+        <p className="text-xl  text-center font-bold text-black">
+          Design a sale poster for any of the following items:
+        </p>
+        <ul className="list-disc space-y-4 w-[40%] ">
+          <li className="text-black text-xl ">Shoes</li>
+          <li className="text-black text-xl ">Clothes</li>
+          <li className="text-black text-xl ">Stationary</li>
+          <li className="text-black text-xl ">Video Games</li>
+          <li className="text-black text-xl ">Books</li>
+        </ul>
+
+        <p className="text-xl text-center   text-black">
+          Your poster can be made online but also can be hand drawn.
+        </p>
+        <p className="text-xl text-center font-bold  text-black">
+          Upload for the next class
+        </p>     
+        
+      
       </div>
       <div>
         <img
@@ -26,8 +45,6 @@ const Page = () => {
           className="w-full h-40 rounded-lg"
           alt=""
         />
-     
-
       </div>
       <div
         onClick={() => inputRef?.current?.click()}
@@ -43,18 +60,20 @@ const Page = () => {
         />
 
         <div className="flex justify-center gap-3 items-center w-full ">
-
-              <FaUpload
-          onClick={() => inputRef?.current?.click()}
-          className="text-xl text-violet-800 cursor-pointer group-hover:text-white"
-        />
-              {previewImage ? (
-  <p className="text-green-800 text-md text-center group-hover:text-white">Image Uploaded</p>
-) : (
-  <p className="text-black text-lg text-center group-hover:text-white">Upload Image</p>
-)}
+          <FaUpload
+            onClick={() => inputRef?.current?.click()}
+            className="text-xl text-violet-800 cursor-pointer group-hover:text-white"
+          />
+          {previewImage ? (
+            <p className="text-green-800 text-md text-center group-hover:text-white">
+              Image Uploaded
+            </p>
+          ) : (
+            <p className="text-black text-lg text-center group-hover:text-white">
+              Upload Image
+            </p>
+          )}
         </div>
-      
       </div>
     </div>
   );
